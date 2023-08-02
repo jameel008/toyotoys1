@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+	body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Product Review Form</h1>
+
+  <form id="reviewForm">
+    <label for="productName">Product Name:</label>
+    <input type="text" id="productName" required>
+
+    <label for="review">Review:</label>
+    <textarea id="review" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  
+
+  <script>
+	function submitReview() {
+  var product = prompt("Enter the product name:");
+  var review = prompt("Enter your review:");
+
+  console.log("Product: " + product);
+  console.log("Review: " + review);
+}
+
+document.getElementById("reviewForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  var product = document.getElementById("productName").value;
+  var review = document.getElementById("review").value;
+
+  console.log("Product: " + product);
+  console.log("Review: " + review);
+
+  // You can perform other actions here, such as sending the data to a server or updating the page.
+});
+
+  </script>
+
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

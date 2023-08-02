@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+
+    <script>
+
+        
+
+
+            var currentdate = new Date();
+            var datetime = currentdate.getDate() + "/"
+                + (currentdate.getMonth() + 1) + "/"
+                + currentdate.getFullYear() + " "
+                + currentdate.getHours() + ":"
+                + currentdate.getMinutes() + ":"
+                + currentdate.getSeconds();
+
+            document.write(datetime);
+        
+
+        $("#Submit").click(function () {
+
+            var name = $("#name").val();
+            var msg = $("#msg").val();
+
+            $("#reviewname").text(name);
+            $("#reviemsg").text(msg);
+            $("#date").text(datetime);
+        })
+
+
+
+        $(document).ready(function () {
+
+            $("#getData").click(function () {
+
+
+                var name = $(".name").val();
+                var email = $(".email").val();
+                var dept = $(".dept").val();
+
+                if (dept == "-1") {
+
+                    alert("Please select the department");
+
+                }
+
+                else {
+                    $(".n").text(name);
+                    $(".review").text(email);
+
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container bg-secondary p-5">
+        <form class="form-control">
+            <label class="form-label">Name:</label>
+            <input type="text" class="form-text name" id="name">
+            <br>
+
+            <label class="form-label">Review:</label>
+            <br>
+            <textarea type="text" class="form-text email" id="msg"></textarea>
+            <br>
+
+            <input id="submit" type="button" value="Submit">
+        </form>
+        <br>
+
+        <div class="reviewBox container bg-body-secondary">
+            <p class="n"></p>
+            <p class="review"></p>
+
+        </div>
+
+
+    </div>
+
+    <div id="addreview">
+        <h3 id="reviewname"></h3>
+        <h4 id="reviewmsg"></h4>
+        <p id="date"></p>
+    </div>
+    <br>
+
+    <!-- <button class="btn btn-info" id="submit"></button> -->
+</body>
+
+</html>

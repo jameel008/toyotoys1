@@ -1,0 +1,438 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    /* overflow: hidden; */
+}
+
+.proimg {
+    /* width: 290px; */
+    height: 350px;
+    /* border: 2px solid rgb(56, 56, 58); */
+}
+
+.procontent {
+    /* width: 100%; */
+    border: 2px solid rgb(56, 56, 58);
+}
+
+/* h1 {
+    background-color: rgb(42, 208, 234);
+} */
+
+/* .navi{
+    position: relative;
+    font-size: 20px;
+    font-family: lato,sans-serif;
+    
+    
+} */
+
+.card{
+    background-color: rgba(145, 67, 120, 0.757) ;
+}
+
+.navigation {
+
+    font-family: Roboto;
+
+
+
+}
+
+.header {
+    height: 100px;
+    background-color: #252525;
+}
+
+.searchtab {
+
+    border: none;
+    background-color: transparent;
+    color:rgba(145, 67, 120, 0.757) ;
+    width: 10vw;
+}
+
+.searchtab:focus {
+    border-color: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.searchBtn {
+
+    background-color: rgba(145, 67, 120, 0.757);
+    color: white;
+    border: none;
+}
+
+.searchBtn:hover {
+
+    background-color: rgba(145, 67, 120, 0.757);
+    color: white;
+}
+
+.hrhr {
+    background-color: aquamarine;
+}
+
+input::placeholder {
+    color: rgba(145, 67, 120, 0.757);
+}
+
+.images {
+    width: 450px;
+    height: 450px;
+}
+
+.price {
+    /* background: -webkit-linear-gradient(bottom, #ff2d56, #ff8b4b); */
+    font-size: 15px;
+
+}
+
+.price .dollar{
+    font-size: 15px;
+}
+
+
+/* .pro{
+    
+    min-height: 100vh;
+    padding: 10px 7%;
+    padding-bottom: 80px;
+
+} */
+
+
+.container-fluid .currency-toggler{   
+    width: 200px;
+    margin-top: 5px ;
+    display: flex;
+    border-radius: 5px;
+
+} 
+
+.container-fluid .currency-toggler span{
+    font-weight: bolder;
+    color: #666;
+    font-size: 15px;
+
+}
+
+.container-fluid .currency-toggler .toggler{
+    
+    margin: 0 10px;
+    height: 22px;
+    width: 70px;
+    border-radius: 50px;
+    background: rgba(145, 67, 120, 0.757);
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+
+}
+
+.container-fluid .currency-toggler .toggler::before{
+    content: '';
+    position: absolute;
+    top: 0px; left: 7px;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .2s ease-out;
+}
+
+.container-fluid .currency-toggler .toggler.active::before{
+    left: calc(100% - 27px);
+}
+
+.btnadd{
+    
+    /* padding: 5px; */
+    /* width: 200px;
+    height: 100px; */
+    background-color: rgba(78, 20, 60, 0.757);
+    color: white;
+    border: none;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius:10px ;
+}
+
+.btnadd:hover{
+    background-color:rgba(99, 22, 74, 0.757) ;
+    color: #fff;
+    font-weight: bolder;
+}
+
+
+
+.product{
+    /* padding: 10px; */
+    height: 410px;
+    width: 250px;
+    /* margin-left: 30px; */
+    /* margin-top: 10px; */
+    /* background-color: gray; */
+}
+
+/* .product img{
+    width: 200px;
+    height: 200px;
+} */
+
+.prcetc{
+    width: 200px;
+    height: 160px;
+    /* height: 200px; */
+    background-color: rgba(145, 67, 120, 0.757);
+   
+}
+
+
+
+.ctr{
+    width: 300px;
+    /* border: 3px solid purple; */
+    padding-top: 144px;
+    padding-left: 20px;
+    background-color: rgba(32, 124, 205, 0.757);
+    color: #fff;
+}
+
+.foot{
+    background-color:rgba(145, 67, 120, 0.757) ;
+    
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+  .offcanvas-header{
+    height: 107px;
+  }
+
+
+  .ankar{
+    font-family: Roboto;
+    font-size: 20px;
+    text-decoration: none;
+    /* text-align: center; */
+    
+  }
+
+  .ankar:hover{
+   font-weight: bolder; 
+   /* text-decoration: underline; */
+    
+  }
+
+
+  /* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    /* padding: 6px 8px 6px 16px; */
+    text-decoration: none;
+    font-size: 40px;
+    font-family: Roboto;
+    color:white;
+    /* display: block; */
+    border: none;
+    background: none;
+    width:250px;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* On mouse-over */
+ 
+  
+  /* Main content */
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  /* .active {
+    background-color: green;
+    color: white;
+  } */
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    /* background-color: #262626; */
+    padding-left: 17px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+  .categor{
+    font-family: Roboto;
+    font-size: 10px;
+    /* text-decoration: none; */
+    
+  }
+
+  .categor:hover{
+    font-weight: bolder; 
+    /* text-decoration: underline; */
+     
+   }
+
+   
+
+   .buy{
+      
+    width: 100px;
+    height: 40px;
+    background-color: rgb(200, 200, 105);
+    color: white;
+    border-radius:6px ;
+    border: none;
+    cursor: pointer;
+    
+  }
+
+  .add{
+    
+    width: 150px;
+    height: 40px;
+    background-color: rgb(122, 22, 22);
+    color: white;
+    border-radius:6px ;
+    border: none;
+    cursor: pointer;
+    
+  }
+
+  
+  
+  .heading {
+    margin-top: 10px;
+    font-size: 30px;
+    margin-right: 25px;
+  }
+  
+  .fa {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  
+  /* Three column layout */
+  .side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+  }
+  
+  .middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+  }
+  
+  /* Place text to the right */
+  .right {
+    text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+    .side, .middle {
+      width: 100%;
+    }
+    /* Hide the right column on small screens */
+    .right {
+      display: none;
+    }
+  }
+		
+
+
+  nav .container-fluid{
+    background: #00bcd4;
+  }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    .mymultiplediv{
+        cursor:pointer;
+      }
+    .mymultiplediv{
+        width: 150px;
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+      
+        background: #ffb5b5;
+        text-align: center;
+    }
+    .mydiv{
+        display:none;
+          padding:10px;
+          text-align:center;
+          height: 350px;
+          width: 600px;
+          border: 1px solid black;
+          margin-top: 20px;
+    }
+    .mydiv img{
+      margin: 0 auto;
+    }
+    .mydiv span{
+        text-align: center;
+        background: #ffdede;
+        padding: 6px 10px;
+        display: block;
+        width: 100px;
+        border: 1px solid #d47c7c;
+        margin: 8px auto;
+    }
+    </style>
+<body>
+    <div class="d-flex">
+    <div class="text-center d-flex" >
+        <ul class="list-inline">
+          <li class="mymultiplediv" id="one"><img src="eimages/71xW9jUgXeL._AC_SL1500_.jpg" alt="" width="100" height="100"></li>
+          <li class="mymultiplediv" id="two"><img src="eimages/img2.jpg" alt="" width="100" height="100"> </li>
+          <li class="mymultiplediv" id="three"> <img src="eimages/img3.jpg" alt="" width="100" height="100"></li>
+          <li class="mymultiplediv" id="fore"> <img src="eimages/img4.jpg" alt="" width="100" height="100"> </li>
+      </ul>
+  </div>
+  <div class="mydiv">
+      <img src="eimages/img2.jpg" alt="Manager" width="250" height="250">
+      <span>Image 1</span>
+  </div>
+  <div class="mydiv" id="divtwo">
+      <img src="eimages/img3.jpg" alt="HR" width="250" height="250">
+      <span>Image 2</span>
+  </div>
+  <div class="mydiv" id="divthree">
+      <img src="eimages/img4.jpg" alt="Developer" width="250" height="250">
+      <span>Image 3</span>
+  </div>
+  <div class="mydiv" id="divfore">
+      <img src="eimages/img5.jpg" alt="Designer" width="250" height="250">
+      <span>Image 4</span>
+  </div>
+</div>
+
+
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('.mymultiplediv').mouseover(function() {
+                  myvar = this.id;
+                  $("div.mydiv").hide();
+                   $('#div'+myvar).show();
+            });
+        });
+        </script>
+
+        <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
